@@ -6,11 +6,15 @@ html, body {
     align-items: center;
     background-color: blueviolet;
     font-family: 'Gugi', cursive;
+    overflow: hidden;
 }
 
 
 
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 80%;
     width: 80%;
     border: 2px solid black;
@@ -26,9 +30,11 @@ html, body {
 }
 
 
-.title-container {
-    text-align: center;
-    padding-bottom: 2em;
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 input[type="radio"] {
@@ -38,7 +44,10 @@ input[type="radio"] {
 }
 
 label {
-    height: 4em;
+    display: flex;
+    align-items: center;
+    height: 2em;
+    margin: 0.5em;
     padding: 1em;
     background: none;
     border: solid 1px white;
